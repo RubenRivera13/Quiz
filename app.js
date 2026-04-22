@@ -5,7 +5,7 @@ const questions = [
     {categoria:"CSS", pregunta:"¿Propiedad para el color de texto?", opciones:["background", "color", "font", "text"], respuesta:1, explicacion:"color cambia el color del texto."},
     {categoria:"CSS", pregunta:["¿Qué incluye el modelo de caja?"], opciones:["margin", "padding", "border", "todas"], respuesta:3, explicacion:"incluye todas."},
 
-    {categoria:"JS", pregunta:"Tipos de dato número?", opciones:["int", "number", "float", "double"], respuesta:1, explicacion:"Js usa number."},
+    {categoria:"JS", pregunta:"¿Tipos de dato número?", opciones:["int", "number", "float", "double"], respuesta:1, explicacion:"Js usa number."},
     {categoria:"JS", pregunta:"¿Evento click?", opciones:["onchange", "onclick", "onhover", "onpress"], respuesta:1, explicacion:"onclick maneja click."},
 
     {categoria:"Git", pregunta:"Comando para guardar cambios", opciones:["git save", "git commit", "git push", "git add"], respuesta:1, explicacion:"commit guarda cambios."},
