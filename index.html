@@ -13,7 +13,12 @@
         <p class="start-head"><strong> Ruta. Fundametos del desarrollo Web</strong></p>
         <h1>Dev Quizt</h1>
         <p>Pon a prueba tus conocimientos sobre Internet, Terminal, HTML, CSS, JavaScript y Git.</p>
-        <button id="start-btn">Comenzar</button>
+        <div class="start-contend">
+            <p class="start-contend-info">❓ 12 preguntas</p>
+            <p class="start-contend-info">🕐 retroalimentación en tiempo real</p>
+            <p class="start-contend-info">🏆 Resultado final</p>
+        </div>
+        <button id="start-btn" class="btn-start"><strong> Comenzar</strong></button>
      </section>
 
      <!-- Pantalla de Preguntas -->
@@ -27,11 +32,13 @@
             <div id="progress-fill"></div>
         </div>
 
-        <h2 id="question"></h2>
+        <p id="categori" class="quiz-categoria"></p>
 
-        <div id="options"></div>
+        <h2 id="question" class="quiz-title"></h2>
 
-        <p id="explanation"></p>
+        <div id="options" class="quiz-opcion"></div>
+
+        <p id="explanation" class="quiz-explanation"></p>
 
         <button id="next-bnt" class="hidden">Siguiente</button>
       </section>

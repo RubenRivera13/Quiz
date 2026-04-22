@@ -6,12 +6,12 @@ const questions = [
     {categoria:"CSS", pregunta:["¿Qué incluye el modelo de caja?"], opciones:["margin", "padding", "border", "todas"], respuesta:3, explicacion:"incluye todas."},
 
     {categoria:"JS", pregunta:"Tipos de dato número?", opciones:["int", "number", "float", "double"], respuesta:1, explicacion:"Js usa number."},
-    {categoria:"Js", pregunta:"¿Evento click?", opciones:["onchange", "onclick", "onhover", "onpress"], respuesta:1, explicacion:"onclick maneja click."},
+    {categoria:"JS", pregunta:"¿Evento click?", opciones:["onchange", "onclick", "onhover", "onpress"], respuesta:1, explicacion:"onclick maneja click."},
 
     {categoria:"Git", pregunta:"Comando para guardar cambios", opciones:["git save", "git commit", "git push", "git add"], respuesta:1, explicacion:"commit guarda cambios."},
     {categoria:"Git", pregunta:"Comando para subir a remoto", opciones:["git upload", "git send", "git push", "git sync"], respuesta:2, explicacion:"push sube los cambios."},
 
-    {categoria:"Terminal", pregunta:"¿Listararchivos?", opciones:["ls", "dir", "list", "show"], respuesta:0, explicacion:"ls lista los archivos"},
+    {categoria:"Terminal", pregunta:"¿Listar archivos?", opciones:["ls", "dir", "list", "show"], respuesta:0, explicacion:"ls lista los archivos"},
     {categoria:"Terminal", pregunta:"¿Como cambias de carpetas?", opciones:["cd", "mv", "cp", "open"], respuesta:0, explicacion:"cd cambia directorio."},
 
     {categoria:"Internet", pregunta:"¿Protocolo web?", opciones:["FTP", "HTTP", "SSH", "TCP"], respuesta:1, explicacion:"HTTP es web."},
@@ -45,6 +45,7 @@ function renderQuestions() {
     nextBtn.classList.add("hidden");
     const q = questions[current];
 
+    document.getElementById("categori").textContent = q.categoria;
     document.getElementById("question").textContent = q.pregunta;
     document.getElementById("progress-text").textContent = `Pregunta ${current+1} de ${questions.length}`;
     document.getElementById("score").textContent = `Puntaje: ${score}`;
