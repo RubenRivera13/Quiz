@@ -8,7 +8,41 @@
 </head>
 <body>
 
+    <!-- Pantalla de Inicio -->
+     <section id="start-screen" class="screen active">
+        <h1>Trivia Web</h1>
+        <p>Responde preguntas sobre desarrollo web. !No puedes cambiar tu respuesta!</p>
+        <button id="start-btn">Comenzar</button>
+     </section>
+
+     <!-- Pantalla de Preguntas -->
+      <section id="quiz_screen" class="screen">
+        <div class="top-bar">
+            <span id="progress-text"></span>
+            <span id="score">Puntaje: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="options"></div>
+
+        <p id="explanation"></p>
+
+        <button id="next-bnt" class="hidden">Siguiente</button>
+      </section>
+
+      <!-- Resultado -->
+       <section id="result-screen" class="screen">
+        <h2>Resultado Final</h2>
+        <p id="final-score"></p>
+        <p id="final-message"></p>
+        <button id="restart-btn">Reiniciar</button>
+       </section>
     
-    
+       <script src="app.js"></script>
 </body>
 </html>
